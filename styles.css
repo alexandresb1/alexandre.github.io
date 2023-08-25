@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Media Queries */
+
+@media (max-width: 450px) {
+    p {
+        font-size: 1rem;
+    }
+    
+    img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .introducao, .formacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introducao, .formacao img {
+        margin: auto;
+    }
+
+    #container {
+        border-radius: 0;
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+    
+    .projetos-conteudo {
+        flex-direction: column;
+    }
+
+    .projetos-imagens img {
+        max-width: 450px;
+        max-height: 450px;
+    }
+
+    #container {
+        border-radius: 0;
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+}
+
+
+/* Media Queries */
+
+
+
+*, body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Menu Superior */
+
+.menusuperior {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    /* border: 5px solid purple; */
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0,5s ease;
+    height: 100px;
+}
+
+.menu-logo a {
+    font-size: 30px;
+}
+
+.menusuperior ul {
+    display: flex;
+    list-style: none;
+}
+
+.menusuperior ul li a{
+    padding: 0 15px;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    /* border: 5px solid rgb(38, 3, 238); */
+}
+
+.menusuperior a:hover {
+    color: #61ffa0;
+}
+
+/* Fechamento Menu Superior */
+
+/* Primeira Seção */
+
+.introducao {
+    /* border: 5px solid orange; */
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5%;
+    max-width: 60rem;
+    background-image: linear-gradient(90deg, #bbffd6, #acdfc1);
+    border-radius: 20px;
+}
+
+.introducao img {
+    max-width: 300px;
+    object-fit: fill;
+}
+
+.introducao h2 {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.introducao p {
+    margin-right: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.introducao span {
+    font-weight: bolder;
+}
+
+/* Fim Primeira Seção */
+
+.formacao {
+    margin: 100px auto;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    text-align: center;
+    flex-flow: row-reverse;
+    justify-content: center;
+    padding: 40px;
+    width: 100vw;
+}
+
+.formacao img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.formacao h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.formacao h3 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.formacao p {
+    margin-right: 15px;
+    padding: 15px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.formacao span {
+    font-weight: bolder;
+}
+
+.formacao h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+
+/* Seção de Projetos */
+
+.projetos {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.projetos h3 {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.projetos-conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.projetos-conteudo img {
+    margin: 20px;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.projetos-conteudo img:hover {
+    transform: scale(1.03);
+}
+
+.projetos-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.projetos-item p {
+    display: block;
+    max-width: 300px;
+}
+
+.projetos-item h5 {
+    margin-top: 10px;
+    padding: 3px;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 6px;
+}
+
+/* Fim seção de Projetos */
+
+/* Botão Voltar */
+
+.botaovoltar {
+    margin: 10px 10px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.botaovoltar a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* Botão Voltar */
+
+/* Seção Rodapé */
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: auto;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 40px;
+    color: white;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-conteudo h3 {
+    font-size: 18px;
+    line-height: 3rem;
+}
+
+.rodape-conteudo p {
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.redes li {
+    margin: 10px
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes a:hover {
+    text-decoration: none;
+    color: #61ffa0;
+}
+
+.redes a i {
+    font-size: 1.6rem;
+}
+
+.rodape-final {
+    font-size: 15px;
+    text-align: center;
+    width: 100vw;
+    margin-top: 10px;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+/* Animação JS */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
