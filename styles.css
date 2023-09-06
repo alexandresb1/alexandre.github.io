@@ -3,19 +3,26 @@
 
 /* Media Queries */
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     p {
         font-size: 1rem;
     }
     
+    .introducao-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
     img {
         max-width: 250px;
         max-height: 250px;
     }
 
-    .introducao, .formacao {
-        display: flex;
+    .introducao-btn {
+        height: 120px;
         flex-direction: column;
+        flex-wrap: wrap;
+        
     }
 
     .introducao, .formacao img {
@@ -30,11 +37,18 @@
     }
 }
 
-@media (min-width: 451px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     p {
         font-size: 1rem;
     }
     
+    .introducao-btn {
+        height: 120px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
     .projetos-conteudo {
         flex-direction: column;
     }
@@ -93,19 +107,20 @@
     font-size: 18px;
     color: #000;
     text-decoration: none;
-    /* border: 5px solid rgb(38, 3, 238); */
+    transition: 0,3s ease;
 }
 
 .menusuperior a:hover {
     color: #61ffa0;
+    transition: 0.3s ease;
 }
+
 
 /* Fechamento Menu Superior */
 
 /* Primeira Seção */
 
 .introducao {
-    /* border: 5px solid orange; */
     font-family: "Montserrat", sans-serif;
     display: flex;
     text-align: center;
@@ -136,6 +151,34 @@
 
 .introducao span {
     font-weight: bolder;
+}
+
+
+.introducao-btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    /* border: 5px solid black; */
+}
+
+.introducao-btn a {
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: #61ffa0;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.introducao-btn a:hover {
+    font-size: 18px;
+    background-color: #3abd6e;
+    transition: 0.5s ease;
 }
 
 /* Fim Primeira Seção */
@@ -189,6 +232,49 @@
     margin: 0;
 }
 
+/* Seção de Tecnologias / Ferramentas */
+
+.tecnologias {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.tecnologias h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.tecnologias h3 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.tecnologias-imagens {
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tecnologias-imagens img {
+    max-width: 150px;
+}
+
+/* Seção de Tecnologias / Ferramentas */
 
 /* Seção de Projetos */
 
@@ -200,9 +286,9 @@
 }
 
 .projetos h3 {
-    padding-top: 10px;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
     text-align: center;
     margin: 0;
 }
